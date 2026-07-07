@@ -1,0 +1,6 @@
+=== Test Performance Metrics ===
+MSE: 0.01082248
+MAE: 0.06943488
+Standard R2: -0.03462136 (-3.4621%)
+OOS R2: -0.02450700 (-2.4507%)
+Pearson Correlation: 0.060093

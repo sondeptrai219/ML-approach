@@ -1,0 +1,6 @@
+=== Ridge Regression Performance Metrics ===
+MSE: 0.01073328
+MAE: 0.06724439
+Standard R2: -0.02609345 (-2.6093%)
+OOS R2: -0.01606248 (-1.6062%)
+Pearson Correlation: 0.023014

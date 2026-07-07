@@ -1,0 +1,6 @@
+=== RF Test Performance Metrics ===
+MSE: 0.01797676
+MAE: 0.09654816
+Standard R2: -0.71856558 (-71.8566%)
+OOS R2: -0.70176509 (-70.1765%)
+Pearson Correlation: 0.192641
