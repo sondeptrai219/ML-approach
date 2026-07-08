@@ -65,17 +65,17 @@ To prevent data leakage and evaluate robustness across different time horizons, 
 
 For both the FNN and RF models, we identify the optimal hyperparameter configuration on the Validation set. We then **refit the selected model on the combined Train + Validation set** (running the FNN for exactly the validation-optimal epoch count $E^*$) before evaluating it on the out-of-sample Test set.
 
-### 2.2 Empirical Results Summary (Refitted Rolling Window)
+### 2.2 Empirical Results Summary (Refitted Rolling Window) (TEST TIMEFRAME)
 
 #### Random Forest Rolling Results:
 * **Optimal parameters**: Validation grid searches consistently select shallow trees (`max_depth = 2.0` or `5.0`) to restrict model variance.
 * **Test Performance**:
-  * **Split 4 (72m)**: The optimal RF (50 trees, depth 2, leaf 2) achieves a **positive out-of-sample $R^2_{OOS}$ of +2.32%** and a **Pearson Correlation of 24.37%**.
+  * **Split 4 (72m)**: The optimal RF (50 trees, depth 2, leaf 2) achieves a **positive out-of-sample $R^2_{OOS}$ of +2.32%**.
 
 #### Feedforward Neural Network Rolling Results:
 * **Optimal parameters**: Validation selects a narrow bottleneck (`[32, 16, 8]`) for the first three splits, and `[64, 32, 16]` for Split 4.
 * **Test Performance**:
-  * **Split 4 (72m)**: The optimal refitted FNN (ReLU, 15 epochs) achieves a **positive out-of-sample $R^2_{OOS}$ of +1.91%** and a **correlation of 10.68%**.
+  * **Split 4 (72m)**: The optimal refitted FNN (ReLU, 15 epochs) achieves a **positive out-of-sample $R^2_{OOS}$ of +1.91%**.
 
 ---
 
